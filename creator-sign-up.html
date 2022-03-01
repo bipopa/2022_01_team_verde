@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/forms.css">
-    <title>Sign Up</title>
+    <title>Creator Sign Up</title>
 </head>
 <body>
-    <section class="vh-100 register-form">
+    <section class="vh-100 creator-form">
         <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col col-xl-10">
             <div class="card">
                 <div class="row g-0">
-                <div class="col-md-6 col-lg-5 d-none d-md-block register-img">
+                <div class="col-md-6 col-lg-5 d-none d-md-block creator-img">
                 </div>
                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                     <div class="card-body p-4 p-lg-5 text-black">
@@ -24,7 +24,7 @@
     
                         <div class="d-flex align-items-center mb-3 pb-1">
                             <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                            <span class="h1 fw-bold mb-0">Register</span>
+                            <span class="h1 fw-bold mb-0">Register as a Creator</span>
                         </div>
     
                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create your account</h5>
@@ -43,7 +43,25 @@
                             <input type="email" id="email" name="email" class="form-control" required />
                             <label class="form-label" for="form2Example17">Email address</label>
                         </div>
-    
+                        
+                        <div class="form-outline d-flex">
+                            <div>
+                                <input type="number" id="age" name="age" class="form-control w-50" required />
+                                <label class="form-label" for="Age">age</label>
+                            </div>
+                            <div>
+                                <select class="form-select w-100" id="country" name="country" aria-label="Default select example" required>
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="mexico">Mexico</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Argentina">Argentina</option>
+                                </select>
+                                <label class="form-label" for="country">Country</label>
+                            </div>
+                        </div>
+
                         <div class="form-outline mb-2">
                             <input type="password" id="password" name="password" class="form-control" required />
                             <label class="form-label" for="form2Example27">Password</label>
