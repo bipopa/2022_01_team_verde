@@ -7,21 +7,31 @@
 			<link rel="stylesheet" href="./styles/home.css">
 		</head>
 
-    <body>
-			<div class="container">
-					<section class="row twitch-color banner">
-						<article class="col-md-1" id="iconc">
-							<img src="./img/twitch.jpeg" class="icono">
-						</article>
-						<article class="col-md-10 nav">
-							<nav class="nav nav-pills flex-column flex-sm-row">
-								<a class="flex-sm-fill text-sm-center nav-link active centrar" aria-current="page" href="#">Active</a>
-								<a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
-								<a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-								<a class="flex-sm-fill text-sm-center nav-link disabled">Disabled</a>
+    <body class="maincolor">
+			<section class="twitch-color">
+				<div class="container">
+					<div class="row banner">
+
+						<div class="col-md-1" id="iconc">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+								<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+							</svg>
+						</div>
+						<div class="col-md-10 nav banner-nav">
+							<nav class="nav nav-pills flex-column flex-sm-row text-center">
+								<a class="flex-sm-fill text-sm-center nav-link active link-navs" aria-current="page" href="#">home</a>
+								<a class="flex-sm-fill text-sm-center nav-link link-navs" href="#">torneos</a>
+								<a class="flex-sm-fill text-sm-center nav-link link-navs" href="#">Link</a>
+								<a class="flex-sm-fill text-sm-center nav-link disabled link-navs">Disabled</a>
 							</nav>
-						</article>
-				</section>
+						</div>
+						<div class="col-md-1 menu">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+					
 				<!-- <section class="carusel">
 					<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 						<div class="carousel-inner">
@@ -46,7 +56,6 @@
 					</div>
 				</section> -->
 
-			</div>
 		</body>
 
 </html>
