@@ -1,0 +1,23 @@
+.register-form, .login-form, .creator-form{
+    background-color: #051723;
+}
+.register-form .card, .login-form .card, .creator-form .card{
+    border-radius: 1.3rem;
+    border: 2px solid #051723;
+}
+.register-img{
+    border-radius: 1rem 0 0 1rem;
+    background-image: url('../img/register.jpg');
+    background-size: cover;
+}
+.login-img{
+    border-radius: 1rem 0 0 1rem;
+    background-image: url('../img/login.jpg');
+    background-size: cover;
+}
+.creator-img{
+    border-radius: 1rem 0 0 1rem;
+    background-image: url('../img/creator.jpg');
+    background-size: cover;
+    background-position-x: 65%;
+}
