@@ -56,3 +56,15 @@
     padding-left:3px;
     padding-right:3px;
 }
+
+.perfilUsuarioActual{
+    background-image: url(../img/FPerfilDefaul.png);
+}
+
+#username_Space{
+    font-size:30px;
+}
+
+#info_Username{
+    color:whitesmoke;
+}
