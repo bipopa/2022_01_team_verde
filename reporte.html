@@ -5,51 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/report.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/perfil.css">
     <title>Reporte</title>
 </head>
-<body class="fondo">
-    <section class="reporte">
-        <div class="container-fluid mt-2 mb-2 contenedor_Saludo">
-            <div class="row d-flex align-items-center saludo">
-                <div class="col-11">
-                    <h1 class="text-center align-items-center" id="nombre_Usuario">
-                        Hello, Username!
-                    </h1>
-                </div>
-                <div class="flex-column col-1">
-                    <img src="./img/perfilD.png" alt="perfilFoto" id="foto_Perfil">
-                </div>
+<body class="maincolor">
+    <header>
+        <section>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top twitch-color banner float">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><svg id="logotipo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+              </svg></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 twitch-color">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./perfil.html">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">What is ConnectNplay?</a>
+                  </li>
+                  <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./sign-in.html">Log Out</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-
+          </nav>
+        </section>
+      </header>
+      <br> <br> <br>
+      <section>
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light navegacion_Barra">
+            <nav class="navbar navbar-expand-md navbar-dark twitch-color banner">
                 <div class="container-fluid">
-                    <a class="navbar-brand" id="marca" href="#">ConnectNPlay </a>
+                    <a class="navbar-brand" id="marca" href="#">ConnectNPlay Report </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" id="perfil_Configuracion" aria-current="page" href="#">Profile Settings</a>
+                                <a class="nav-link active" id="perfil_Configuracion" aria-current="page" href="./perfil.html">Profile Settings</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="siguiendo" href="#">Following</a>
+                                <a class="nav-link active" id="siguiendo" href="#">Configuration</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="seguridad" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Security and Privacy
+                                <a class="nav-link active dropdown-toggle" href="#" id="seguridad" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Type of user
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Password Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Viewer</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Devices</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Access Settings</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Verification</a></li>
+                                    <li><a class="dropdown-item" href="#">Streamer</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -61,23 +78,53 @@
                 </div>
             </nav>
         </div>
-        
-        <div class="col-md-6 mt-2 mb-2">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                    <strong id="username_Space" class="d-inline-block mb-2 text-primary text-center">Change Username and Password</strong>
-                    <p id="info_Username" class="card-text mb-auto p-2">For changing your personal account password, click on the link down below to access to the formulary</p>
-                    <a href="#" class="stretched-link p-2">Click here to change your password</a>
-                </div>
-                <div class="col-auto d-none d-lg-block perfilUsuarioActual">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>      
-                </div>
-            </div>
-        </div>
-
-
     </section>
-
+    <br> <br> <br>
+    <div class="container twitch-color">
+        <div class="row g-5">
+            <div class="col-md-7 col-lg-8">
+                <h4 class="d-flex justify-content-between align-items-center mb-8">
+                    <span class="text-white">Registered users</span>
+                </h4>
+                <table class="table text-white">
+                    <thead class="thead-dark text-white">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Nickname</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Password</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>@mdo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             <!--<ul class="list-group mb-3" id="lista_productos">
+                    
+                </ul> por si necesitas un espacio vacio para colocar los registros-->
+      </div
+    
 </body>
 
 </html>
