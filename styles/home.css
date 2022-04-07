@@ -1,5 +1,5 @@
 .twitch-color{
-    background-color: rgb(119,44,232);
+    background-color: rgb(102, 63, 160);
 }
 .maincolor{
     background-color: #051723;
@@ -11,10 +11,9 @@
 }
 
 .banner{
-    position:sticky;
-    top:0px;
     transition: height 0.5s;
     height:70px;
+    
 }
 .banner:hover{
     transition-property:height;
@@ -22,10 +21,7 @@
     transition-delay:0s;
     height:80px;
 }
-.container{
-padding:0px;
-border:0px;
-}
+
 #iconc{
     padding:0px;
     border:0.1px solid transparent;
@@ -46,10 +42,51 @@ border:0px;
 }
 
 .nav > a {
+    transition-property:padding;
+    transition-duration:0.3s;
+    transition-delay:0s;
     padding-top: 15px;
 }
 
 .nav:hover > a {
+    transition-property:padding;
+    transition-duration:0.3s;
+    transition-delay:0s;
     padding-top: 20px;
 }
+.img-car{
+   height:30vw;
+   width:100%;
+   object-fit: fill;
+   /* box-shadow: 0px 5px 10px blueviolet; */
+}
 
+
+li>a:hover{
+    background-color:navy;
+   
+}
+li>a {
+    border-radius:30px;
+}
+.resaltar{
+    color:white;
+    font-weight: bolder;
+}
+.featurette-divider{
+    background-color: white;
+}
+.featurette-heading, .lead{
+    color:white
+}
+.button-nav{
+    color:white;
+    border-radius:10%;
+}
+.button-nav:hover{
+    background-color:navy;
+    color:white;
+}
+.centrado{
+    margin-top:100px;
+}

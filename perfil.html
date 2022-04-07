@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/perfil.css">
+    <title>Perfil</title>
+</head>
+<body class="maincolor">
+  <header>
+    <section>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top twitch-color banner">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><svg id="logotipo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+          </svg></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 twitch-color">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./perfil.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">What is ConnectNplay?</a>
+              </li>
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./reporte.html">Report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./sign-in.html">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+    <main>
+
+    <div class="container centrado">
+        <section class="row">
+        <div class="card col-md-8 text-center" >
+            <div class="card-body">
+                <img class="card-img-top rounded-circle" style="border: 1px solid gray; width: 12rem; float: left; clear: both;"  src="./img/FPerfilDefaul.png" alt="FPerfildefaul">
+                <button type="button" class="btn btn-outline-primary"style="float: right;">Editar perfil</button>
+              <h1 class=" card-text1"style="font-size">USER NAME</h1>
+              <p class="card-text2">@USER NAME</p>
+              <p class="card-text justify-content-center"> Lorem ipsum dolor sit amet, consectetur adipiscng elit. Suspendisse sodales semper velit a pharetra. Vestibulum nulla nunc, tempor ut sodales et,</p>
+              <a class="card-text2" style="float: right;">@RED SOCIAL</a>
+                <img src="./img/enlace.png" alt="enlaceicon0" width="10px" height="10px" style="float: right;">
+              <div class="col-md-12 nav banner-nav">
+                <nav class="nav nav-pills flex-column flex-sm-row text-center">
+                    <a class="flex-sm-fill text-sm-center nav-link active link-navsP" aria-current="page" href="#">Mi perfil</a>
+                    <a class="flex-sm-fill text-sm-center nav-link link-navsP" href="#">Mis torneos (Streamer)</a>
+                    <a class="flex-sm-fill text-sm-center nav-link link-navsP" href="#">Mis sorteos (Streamer)</a>
+                    <a class="flex-sm-fill text-sm-center nav-link link-navsP" href="#">Streamers</a>
+                    <a class="flex-sm-fill text-sm-center nav-link link-navsP" href="#">Configuración</a>
+                </nav>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <nav class="navbar navbar-light">
+                <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                         <img src="./img/buscar.png" alt="buscaricon" width="25px" height="25px"> 
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </form>
+              </nav> 
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active text-center">
+                  Streamers seguidos
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+              </div>
+              <nav aria-label="...">
+                <ul class="pagination pagination-sm">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+              </nav>
+        </div>
+        </section>
+      </main>
+</body>
+</html>
